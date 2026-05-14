@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>eric</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Preload шрифт для скорости -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Динамические звёздочки и сердечки будут добавлены через JS -->
+    <div class="floating-container"></div>
+
+    <main class="card">
+        <div class="card-inner">
+            <!-- Заголовок с именем и возрастом (ЗАМЕНИТЬ НА РЕАЛЬНЫЕ ДАННЫЕ) -->
+            <h1 class="undertale-title">
+                <span class="name">КЕНТУ</span><br>
+                <span class="age">🎂 26 лет 🎂</span>
+            </h1>
+
+            <!-- Фото друга -->
+            <div class="photo-frame">
+                <img src="assets/images/2026-05-15_01-51-09.png" alt="Фото именинника" class="friend-photo" onerror="this.src='https://via.placeholder.com/600x400?text=+ФОТО+ДРУГА+'">
+            </div>
+
+            <!-- Поздравительный текст (ЗАМЕНИТЬ) -->
+            <div class="message">
+                <p>
+                    кого я вижу! ба!<br>
+                    вам - рожденья день!давно не виделись,<br>
+                    и жду я встречи! <br>
+                    пусть льётся вайб,креативность бьёт ключом!<br>
+                    и исследовательский пыл неугасимый жжёт в груди..<br>
+                    к чёрту пафос! с рожденьем вас.жду встречи.<br>
+                    ваш... Приятель.
+                </p>
+                <div class="emoji-floating">🙃 🌚 💛</div>
+            </div>
+
+            <!-- Музыкальный плеер (один трек, без автозапуска) -->
+            <div class="undertale-player">
+                <div class="track-info">🎵 | ран ит бади</div>
+                <div class="player-controls">
+                    <button id="playPauseBtn" class="soul-button">▶ плей</button>
+                </div>
+                <audio id="bgm" preload="auto" loop>
+                    <source src="assets/music/echo.mp3" type="audio/mpeg">
+                    Твой браузер не поддерживает аудио.
+                </audio>
+            </div>
+
+            <!-- Подпись отправителя -->
+            <footer class="signature">
+                <p>📜 с любовью от <strong>xod4rap</strong><br>Уфа, май 2026</p>
+            </footer>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
